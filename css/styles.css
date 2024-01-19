@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.block {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.fullness {
+    font-size: 16px;
+    color: white;
+    background-color: rgba(44, 47, 49, 0.5);;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
