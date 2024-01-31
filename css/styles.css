@@ -2,15 +2,20 @@ body {
     margin: 0;
 }
 
-.block {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+.description {
+    background-color: rgba(44, 47, 49, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.fullness {
+    font-size: 16px;
     color: white;
-    font-weight: bold;
-    font-size: 12px;
+    background-color: rgba(30, 90, 130, 0.5);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
 }
 
 .container {
@@ -24,27 +29,22 @@ body {
     margin-bottom: 10px;
 }
 
-.fullness {
-    font-size: 16px;
-    color: white;
-    background-color: rgba(30, 90, 130, 0.5);
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-}
 
+.block {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
 
 .resizable {
     resize: both;
     overflow: auto;
     cursor: nwse-resize;
-}
-
-#description {
-    background-color: rgba(44, 47, 49, 0.5);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
 }
 
 .error-alert {
