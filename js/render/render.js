@@ -1,4 +1,16 @@
 class Render {
+    static renderFullness(fullness, containerElement) {
+        let existedElem = document.querySelector('.fullness');
+
+        if (!existedElem) {
+            existedElem = document.createElement('p');
+            existedElem.className = 'fullness';
+            document.body.insertBefore(existedElem, containerElement);
+        }
+
+        existedElem.textContent = `Fullness: ${Math.round(fullness * 100)}`;
+    }
+
     static renderBlock(block, containerElement) {
         const blockElement = document.createElement('div');
         blockElement.className = 'block';
@@ -14,18 +26,6 @@ class Render {
         blockElement.textContent = block.initialOrder;
 
         containerElement.appendChild(blockElement);
-    }
-
-    static renderFullness(fullness) {
-        let existedElem = document.querySelector('.fullness');
-
-        if (!existedElem) {
-            existedElem = document.createElement('p');
-            existedElem.className = 'fullness';
-            document.body.appendChild(existedElem);
-        }
-
-        existedElem.textContent = `Fullness: ${Math.round(fullness * 100)}`;
     }
 }
 

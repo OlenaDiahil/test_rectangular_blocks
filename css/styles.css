@@ -2,12 +2,6 @@ body {
     margin: 0;
 }
 
-#container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-
 .block {
     position: absolute;
     display: flex;
@@ -19,15 +13,41 @@ body {
     font-size: 12px;
 }
 
+.container {
+    box-shadow: 0 0 10px rgba(44, 47, 49, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px solid rgba(44, 47, 49, 0.3);;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .fullness {
     font-size: 16px;
     color: white;
-    background-color: rgba(44, 47, 49, 0.5);;
-    border-radius: 8px;
+    background-color: rgba(30, 90, 130, 0.5);
+    text-align: center;
     padding: 10px;
-    position: absolute;
     margin: 0;
-    top: 10px;
-    left: 50%;
-    transform: translate(-50%);
+}
+
+
+.resizable {
+    resize: both;
+    overflow: auto;
+    cursor: nwse-resize;
+}
+
+#description {
+    background-color: rgba(44, 47, 49, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.error-alert {
+    text-align: center;
+    color: red;
 }
